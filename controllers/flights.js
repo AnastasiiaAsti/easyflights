@@ -1,18 +1,18 @@
 const Flight = require('../models/flight')
 
 module.exports = {
-    new: newMovie,
+    new: newFlight,
     create,
     index
 }
 
-function newMovie(req, res) {
+function newFlight(req, res) {
     res.render('flights/new');
 }
 
 function create(req, res) {
     req.body.flightNo = req.body.flightNo.trim();
-    res.redirect('/movies');
+    res.redirect('/flights');
 }
 
 function index(req, res) {
