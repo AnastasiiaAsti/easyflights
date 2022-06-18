@@ -3,6 +3,8 @@ var router = express.Router();
 const flightsCtrl = require('../controllers/flights');
 
 
+// Get /movie.all
+router.get('/', flightsCtrl.index)
 // GET /movies/new
 router.get('/new', flightsCtrl.new);
 // POST /movies
