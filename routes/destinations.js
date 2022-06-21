@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const reviewsCtrl = require('../controllers/destinations')
+const destinationsCtrl = require('../controllers/destinations')
 
 router.post('/flights/:id/destinations', destinationsCtrl.create )
 
