@@ -7,7 +7,7 @@ const destinationSchema = new Schema({
         type: String,
         emun: ['AUS', 'DFW', 'DEN', 'LAX', 'SAN']
     },
-    arrival: Date
+    arrival: Date,
 })
 
 const flightSchema = new Schema({
