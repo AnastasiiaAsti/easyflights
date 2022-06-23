@@ -34,3 +34,8 @@ nav a:hover {
 .table {
   border-radius: 15px;
 }
+
+#header {
+  color: white;
+  font-size: 3.5rem;
+}
