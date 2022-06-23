@@ -19,7 +19,7 @@
             </div>
             </div>
 <div class="container p-3 mt-4">
-    <form class="" id="" method="POST"
+    <form method="POST"
         action="/flights/<%= flight._id %>/destinations">
         <label>Airport:
             <select class="border p-1" name="airport">
@@ -55,8 +55,8 @@
                 <td><%= ticket.seat %></td>
                 <td><%= ticket.price %></td>
                 <td>
-                    <form action="/tickets/<%= ticket._id %>?_method=DELETE" method="POST" id="delete-ticket">
-                            <button type="submit" form="delete-ticket" class="btn btn-sm btn-danger float-right">X</button>
+                    <form action="/tickets/<%= ticket._id %>?_method=DELETE" method="POST" id="deleteTicket">
+                            <button type="submit" form="deleteTicket" class="btn btn-sm btn-danger float-right">X</button>
                     </form>
                 </td>
             </tr>

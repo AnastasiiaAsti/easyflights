@@ -4,7 +4,7 @@
 <div class="container p-3">
         <h5 class="mt-2">New Ticket</h5>
         
-        <form action="/flights/<%= flightId %>/tickets" method="POST" id="ticket-create">
+        <form action="/flights/<%= flightId %>/tickets" method="POST">
                 <label>Seat
                         <input class="border p-1" type="text" name="seat" required pattern="[A-F][1-9]\d?">
                 </label><br>
@@ -12,7 +12,7 @@
                         <input class="border p-1" type="text" name="price">
                 </label><br>
                 <br>
-        <button type="submit" form="ticket-create" class="btn btn-warning btn-lg rounded-pill float-right mt-5">Create Ticket</button>
+        <button type="submit" class="btn btn-warning btn-lg rounded-pill float-right mt-5">Create Ticket</button>
         </form>
 </div>
 
