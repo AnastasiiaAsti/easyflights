@@ -1,23 +1,23 @@
 <%- include('../partials/header') %>
 
-<section id="show-page" class="border border-warning bg-light p-1">
-    <div class="col row">
-        <div class="col-3">Airline: </div>
-        <div><%= flight.airline %></div>
-    </div>
-    <div class="col row">
-        <div class="col-3">Airport: </div>
-        <div><%= flight.airport %></div>
-    </div>
-    <div class="col row">
-        <div class="col-3">Flight Number: </div>
-        <div><%= flight.flightNo %></div>
-    </div>
-    <div class="col row">
-        <div class="col-2">Departs: </div>
-        <div><%= flight.departs %></div>
-    </div>
-</section>
+<div id="show-page" class="container border border-warning bg-light p-1">
+        <div class="row m-1">
+            <div class="col">Airline: </div>
+            <div class="col"><%= flight.airline %></div>
+        </div>
+        <div class="row m-1">
+            <div class="col">Airport: </div>
+            <div class="col"><%= flight.airport %></div>
+        </div>
+        <div class="row m-1">
+            <div class="col">Flight Number: </div>
+            <div class="col"><%= flight.flightNo %></div>
+        </div>
+        <div class="row m-1">
+            <div class="col">Departs: </div>
+            <div class="col"><%= flight.departs %></div>
+        </div>
+</div>
 <form class="mt-5" id="" method="POST"
     action="/flights/<%= flight._id %>/destinations">
     <label>Airport:
