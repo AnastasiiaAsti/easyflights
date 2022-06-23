@@ -1,29 +1,31 @@
 <%- include('../partials/header') %>
 
-    <form class="mt-5" action="/flights" method="POST">
-        <label>Airline:
-            <select class="border border-warning p-1" name="airline">
-                <option value="American">American</option>
-                <option value="United">United</option>
-                <option value="Southwest">Southwest</option>
-            </select>
-        </label><br>
-        <label>Airport:
-            <select class="border border-warning p-1" name="airport">
-                <option value="AUS">AUS</option>
-                <option value="DFW">DFW</option>
-                <option value="DEN">DEN</option>
-                <option value="LAX">LAX</option>
-                <option value="SAN">SAN</option>
-            </select>
-        </label><br>
-        <label>Flight Number:
-            <input class="border border-warning p-1" type="number" name="flightNo">
-        </label><br>
-        <label>Departs:
-            <input class="border border-warning p-1" type="date" name="departs">
-        </label><br>
-        <input class="btn btn-warning btn-lg mt-5" type="submit" value="Add Flight">
-    </form>
+    <div class="container p-3">
+        <form action="/flights" method="POST">
+            <label>Airline:
+                <select class="p-1 border" name="airline">
+                    <option value="American">American</option>
+                    <option value="United">United</option>
+                    <option value="Southwest">Southwest</option>
+                </select>
+            </label><br>
+            <label>Airport:
+                <select class="p-1 border" name="airport">
+                    <option value="AUS">AUS</option>
+                    <option value="DFW">DFW</option>
+                    <option value="DEN">DEN</option>
+                    <option value="LAX">LAX</option>
+                    <option value="SAN">SAN</option>
+                </select>
+            </label><br>
+            <label>Flight Number:
+                <input class="p-1 border" type="number" name="flightNo">
+            </label><br>
+            <label>Departs:
+                <input class="p-1 border" type="date" name="departs">
+            </label><br>
+            <input class="btn btn-warning btn-lg mt-5" type="submit" value="Add Flight">
+        </form>
+    </div>
 
     <%- include('../partials/footer') %>

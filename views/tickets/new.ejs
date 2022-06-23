@@ -1,17 +1,19 @@
 <%- include('../partials/header') %>
 
 
-<h5 class="mt-5">New Ticket</h5>
-
-<form action="/flights/<%= flightId %>/tickets" method="POST" id="ticket-create">
-        <label>Seat
-                <input type="text" name="seat" required pattern="[A-F][1-9]\d?">
-        </label><br>
-        <label>Price
-                <input type="text" name="price">
-        </label><br>
-        <br>
-<button type="submit" form="ticket-create" class="btn btn-warning">Create Ticket</button>
-</form>
+<div class="container p-3">
+        <h5>New Ticket</h5>
+        
+        <form action="/flights/<%= flightId %>/tickets" method="POST" id="ticket-create">
+                <label>Seat
+                        <input class="border p-1" type="text" name="seat" required pattern="[A-F][1-9]\d?">
+                </label><br>
+                <label>Price
+                        <input class="border p-1" type="text" name="price">
+                </label><br>
+                <br>
+        <button type="submit" form="ticket-create" class="btn btn-warning">Create Ticket</button>
+        </form>
+</div>
 
 <%- include('../partials/footer') %>
