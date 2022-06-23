@@ -33,27 +33,38 @@
         <input class="border border-warning p-1" type="datetime-local" name="arrival">
     </label><br>
 </select>
-<input type="submit" value="Add">
+<input class="mb-5" type="submit" value="Add">
 </form>
+
+<form id="add-ticket" class="mb-3" action="/flights/<%= flight._id %>/tickets/new" method="POST">
+    <select name="flightId">
+    <%- tickets.map(f => 
+        `<option value="${f._id}">${f.flightNo}</option>`
+    ).join('') %>
+    </select>
+
+    <a href="/flights/<%= flight._id %>/tickets/new">New Ticket</a>
+</form>
+
 <% if (flight.destinations.length) { %>
-    <table>
+    <table class="table">
     <thead>
         <tr>
-        <th>Airport</th>
-        <th>Arrival</th>
+        <th scope="col">Airport</th>
+        <th scope="col">Arrival</th>
         </tr>
     </thead>
     <tbody>
-        <% flight.destinations.forEach(function(d) { %>
+        <% flight.destinations.forEach(function(destination) { %>
         <tr>
-            <td><%= d.airport %></td>
-            <td><%= d.arrival %></td>
+            <td><%= destination.airport %></td>
+            <td><%= destination.arrival %></td>
         </tr>
         <% }); %>
     </tbody>
     </table>
 <% } else { %>
-    <h5></h5>
+    <h5>No Destinations</h5>
 <% } %>
 
 
