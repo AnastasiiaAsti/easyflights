@@ -7,6 +7,8 @@
                 <th scope="col">Airport</th>
                 <th scope="col">Flight Number</th>
                 <th scope="col">Time of Departure</th>
+                <th scope="col">Flight Details</th>
+                <th scope="col">Delete Flight</th>
             </tr>
         </thead>
         <tbody class="">
@@ -17,6 +19,11 @@
                     <td><%= flight.flightNo %></td>
                     <td><%= flight.departs %></td>
                     <td><a href="/flights/<%= flight._id %>">Details</a></td>
+                    <td>
+                        <form action="/flights/<%= flight._id %>?_method=DELETE" method="POST" id="deleteFlight">
+                            <button type="submit" form="deleteFlight" class="btn btn-sm btn-danger">X</button>
+                        </form>
+                    </td>
         </tr>
         <% }) %>
         </tbody>
