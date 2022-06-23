@@ -2,23 +2,24 @@
 
 <div class="container p-3">
             <div class="row m-1">
-                <div class="col">Airline: </div>
+                <div class="col font-weight-bold">Airline: </div>
                 <div class="col"><%= flight.airline %></div>
             </div>
             <div class="row m-1">
-                <div class="col">Airport: </div>
+                <div class="col font-weight-bold">Airport: </div>
                 <div class="col"><%= flight.airport %></div>
             </div>
             <div class="row m-1">
-                <div class="col">Flight Number: </div>
+                <div class="col font-weight-bold">Flight Number: </div>
                 <div class="col"><%= flight.flightNo %></div>
             </div>
             <div class="row m-1">
-                <div class="col">Departs: </div>
+                <div class="col font-weight-bold">Departs: </div>
                 <div class="col"><%= flight.departs %></div>
             </div>
-    <hr>
-    <form class="mt-5" id="" method="POST"
+            </div>
+<div class="container p-3 mt-4">
+    <form class="" id="" method="POST"
         action="/flights/<%= flight._id %>/destinations">
         <label>Airport:
             <select class="border p-1" name="airport">
@@ -33,10 +34,10 @@
             <input class="border p-1" type="datetime-local" name="arrival">
         </label><br>
     </select>
-    <input class="btn btn-warning mb-5" type="submit" value="Add">
+    <input class="btn btn-warning rounded-pill" type="submit" value="Add">
     </form>
-    
-    <hr>
+</div>
+<div class="container p-3 mt-4">
         <h5 id="tickets-header">Tickets</h5>
     <table class="table">
         <thead class="table-warning">
@@ -62,10 +63,9 @@
         <% }) %>
     </table>
     
-    <a href="/flights/<%= flight._id %>/tickets/new" class="btn btn-warning mb-5" id="new-ticket-btn">Create a new ticket</a>
-    
-    <hr>
-    
+    <a href="/flights/<%= flight._id %>/tickets/new" class="btn btn-warning mb-5 rounded-pill">Create a new ticket</a>
+</div>
+<div class="container p-3 mt-4">
 <h5>Destinations</h5>
     <% if (flight.destinations.length) { %>
         <table class="table">
@@ -89,6 +89,6 @@
     <% } %>
     
 </div>
-
+</div>
 
 <%- include('../partials/footer') %>
