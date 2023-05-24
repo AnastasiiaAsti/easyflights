@@ -1,34 +1,19 @@
-# mongoose-flights
+# EasyFlights
 
 # Purpose
 
-A full-stack fake airport app. Allows user to add and browse flights, add tickets and destinations to a chosen flight.
+A full-stack fake airport app. Allows user to add and browse flights, add tickets and destinations to a chosen flight. EasyFlights is your ultimate flight booking app, designed to make your travel dreams a reality with just a few taps. Whether you're planning a business trip, a family vacation, or a spontaneous getaway, FlightApp provides a seamless and hassle-free experience to find and book your flights.
 
-# User Stories
+# Tech Used
 
-AAU, I want to view a list of all flights (index view) that displays each flight's airline, airport, flight no., and departure date/time.<br>
-
-AAU, I want to create flights by entering the information on a page (new view) that has a form and submitting it.<br>
-
-AAU, I want to be able to access each view via a navigation bar at the top of the page with links to:<br>
-ALL FLIGHTS, and<br>
-ADD FLIGHT<br>
-
-AAU, when viewing the list of flights, I want to click on a "detail" link displayed next to each flight to view all of the properties for that flight (show view)<br>
-
-AAU, when viewing the details page (show view) for a flight, I want to be able to add a destination for that flight, including its arrival date/time & one of the established airport codes<br>
-
-AAU, when viewing the details page (show view) for a flight, I want to see a list of that flight's destinations (airport & arrival)<br>
-
-AAU, when viewing the detail page for a flight, I want to view a list of the tickets that have been created for that flight<br>
+JavaScript, Node.js, Express, MongoDB, Mongoose, Bootstrap, Html5, Css3
 
 
-<img width="869" alt="Screen Shot 2022-07-01 at 1 06 50 PM" src="https://user-images.githubusercontent.com/97631462/176961953-edbc339c-7b5b-4d0f-a733-24de61f17f44.png">
-<img width="869" alt="Screen Shot 2022-07-01 at 1 04 06 PM" src="https://user-images.githubusercontent.com/97631462/176961962-5494e1c5-0c37-4efc-9ccd-4a6e6ae37a46.png">
-<img width="869" alt="Screen Shot 2022-07-01 at 1 04 37 PM" src="https://user-images.githubusercontent.com/97631462/176961966-899e88cd-bf04-4395-a864-4e2f703abc4e.png">
-<img width="869" alt="Screen Shot 2022-07-01 at 1 04 18 PM" src="https://user-images.githubusercontent.com/97631462/176961972-ddf5c5d9-50ad-426b-982b-907c250924d9.png">
+
+<img width="400" alt="flight_app_1" src="https://github.com/AnastasiiaAsti/easyflights/assets/97631462/de7686ff-8ddf-4053-88d4-69b19c5cafc1"><img width="400" alt="flight_app_2" src="https://github.com/AnastasiiaAsti/easyflights/assets/97631462/c201e498-e555-450d-bf3a-5905697e2e2d">
+<img width="400" alt="flight_app_3" src="https://github.com/AnastasiiaAsti/easyflights/assets/97631462/1a42cd01-8581-42b6-b136-b63e7c58ce7a"><img width="400" alt="flight_app_4" src="https://github.com/AnastasiiaAsti/easyflights/assets/97631462/d780d3e4-22a3-450c-9a36-7f505e16b2e0">
 
 
-# Technologies Used
+# Icebox
 
-Express, MongoDB, Mongoose, Bootstrap
+- utilize API
